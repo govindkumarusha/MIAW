@@ -7,8 +7,8 @@
 
 			embeddedservice_bootstrap.init(
 				'00DD4000000HsJ5',
-				'SHM_Customer_Care',
-				'https://sonyhondamobility01--devpro1.sandbox.my.site.com/ESWSHMCustomerCare1712293822206',
+				'MIAW_BOt',
+				'https://sonyhondamobility01--devpro1.sandbox.my.site.com/ESWMIAWBOt1712677727186',
 				{
 					scrt2URL: 'https://sonyhondamobility01--devpro1.sandbox.my.salesforce-scrt.com'
 				}
@@ -18,7 +18,8 @@
 		}
 	};
 </script>
-<script type='text/javascript' src='https://sonyhondamobility01--devpro1.sandbox.my.site.com/ESWSHMCustomerCare1712293822206/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<script type='text/javascript' src='https://sonyhondamobility01--devpro1.sandbox.my.site.com/ESWMIAWBOt1712677727186/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
 
   </body>
 </html>
