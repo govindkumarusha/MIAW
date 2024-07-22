@@ -1,28 +1,30 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
   <body>
-    <script type='text/javascript'>
-	function initEmbeddedMessaging() {
-		try {
-			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+    <div>Afeela Hoster</div>
+    <div id="lightningout"></div>
 
-			embeddedservice_bootstrap.init(
-				'00DD4000000HsJ5',
-				'MIAW_BOt',
-				'https://sonyhondamobility01--devpro1.sandbox.my.site.com/ESWMIAWBOt1712677727186',
-				{
-					scrt2URL: 'https://sonyhondamobility01--devpro1.sandbox.my.salesforce-scrt.com'
-				}
-			);
-   embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields( {
-                'User_Id' : ''
-            } );
-		} catch (err) {
-			console.error('Error loading Embedded Messaging: ', err);
-		}
-	};
-</script>
-<script type='text/javascript' src='https://sonyhondamobility01--devpro1.sandbox.my.site.com/ESWMIAWBOt1712677727186/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-
-
+    <script src="https://sonyhondamobility01--devpro1.sandbox.my.salesforce.com/lightning/lightning.out.js"></script>
+    <script>
+      $Lightning.use(
+        'c:cs_SHMLightningOutApp', // name of the Lightning app
+        function () {
+          // Callback once framework and app loaded
+          $Lightning.createComponent(
+            'c:cs_MessagingSessionUtility', // top-level component of your app
+            {}, // attributes to set on the component when created
+            'lightningout', // the DOM location to insert the component
+            function (cmp) {
+              // callback when component is created and active on the page
+            }
+          );
+        },
+        'https://sonyhondamobility01--devpro1.sandbox.my.salesforce.com'
+      );
+    </script>
   </body>
 </html>
