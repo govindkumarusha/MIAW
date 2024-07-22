@@ -8,7 +8,7 @@
     <div>Afeela Hoster</div>
     <div id="lightningout"></div>
 
-    <script src="https://sonyhondamobility01--devpro1.sandbox.my.salesforce.com/lightning/lightning.out.js"></script>
+    <script src="https://sonyhondamobility01--devpro1.sandbox.lightning.force.com/lightning/lightning.out.js"></script>
     <script>
       $Lightning.use(
         'c:cs_SHMLightningOutApp', // name of the Lightning app
@@ -23,7 +23,7 @@
             }
           );
         },
-        'https://sonyhondamobility01--devpro1.sandbox.my.salesforce.com'
+        'https://sonyhondamobility01--devpro1.sandbox.lightning.force.com/'
       );
     </script>
   </body>
