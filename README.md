@@ -4,9 +4,7 @@
             console.log(
                 'Inside Messaging Ready Block'
             );
-            let userId = $A.get(
-                '$SObjectType.CurrentUser.Id'
-            );
+            let userId = '';
             console.log(
                 'User Id is',
                 userId
