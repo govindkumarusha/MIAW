@@ -22,7 +22,7 @@
             }
           );
         },
-        'https://sonyhondamobility01--devpro1.sandbox.my.salesforce.com'
+        'https://sonyhondamobility01--devpro1.sandbox.my.site.com'
       );
     </script>
   </body>
