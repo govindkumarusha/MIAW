@@ -13,6 +13,13 @@
 					scrt2URL: 'https://sonyhondamobility01--devpro1.sandbox.my.salesforce-scrt.com'
 				}
 			);
+   window.addEventListener(
+        "onEmbeddedMessagingReady", () => {
+            embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields( {
+                'User_Id' : 'af1287254218'
+            } );
+        }
+    );
   
 		} catch (err) {
 			console.error('Error loading Embedded Messaging: ', err);
