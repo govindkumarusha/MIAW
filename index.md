@@ -13,18 +13,19 @@
 					scrt2URL: 'https://sonyhondamobility01--devpro1.sandbox.my.salesforce-scrt.com'
 				}
 			);
-   window.addEventListener(
+  
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+	
+	 window.addEventListener(
         "onEmbeddedMessagingReady", () => {
             embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields( {
                 'User_Id' : 'af1287254218'
             } );
         }
     );
-  
-		} catch (err) {
-			console.error('Error loading Embedded Messaging: ', err);
-		}
-	};
 </script>
 <script type='text/javascript' src='https://sonyhondamobility01--devpro1.sandbox.my.site.com/ESWMIAWBOt1712677727186/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
