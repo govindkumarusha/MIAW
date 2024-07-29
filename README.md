@@ -12,7 +12,7 @@
                 userId
             );
             embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields( {
-                'User_Id' : userId
+                'User_Id' : 'af1287254218'
             } );
         }
     );
