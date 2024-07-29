@@ -1,5 +1,4 @@
 <html>
-  <body>
     <script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
@@ -29,6 +28,4 @@
 </script>
 <script type='text/javascript' src='https://sonyhondamobility01--devpro1.sandbox.my.site.com/ESWMIAWBOt1712677727186/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
-
-  </body>
 </html>
